@@ -1,0 +1,2 @@
+# WorkshopAstronomia
+Lista de inscritos
