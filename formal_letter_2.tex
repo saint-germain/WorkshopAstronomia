@@ -25,7 +25,7 @@
 	foldmarks=false, % Prints small fold marks on the left of the page
 	addrfield=true % Set to false to hide the addressee section - you will then want to adjust the height of the body of the letter on the page by adding the following in this section: \makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
 	]{scrlttr2}
-
+\usepackage{graphicx,float,wrapfig}
 \usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
 
 \renewcommand*{\raggedsignature}{\raggedright} % Stop the signature from indenting
@@ -36,7 +36,7 @@
 
 \setkomavar{fromname}{Germ\'an Chaparro} % Your name used in the from address
 \setkomavar{fromaddress}{Universidad ECCI\\Bogot\'a, Colombia\\gchaparrom@ecci.edu.co} % Your address
-\setkomavar{signature}{\vspace{2 cm}\\Germ\'an Chaparro, PhD\\Profesor Titular\\Universidad ECCI\\Bogot\'a, Colombia} % Your name used in the signature
+\setkomavar{signature}{Germ\'an Chaparro, PhD\\Profesor Titular\\Universidad ECCI\\Bogot\'a, Colombia} % Your name used in the signature
 
 \date{Junio 22 de 2015} % Date of the letter
 
@@ -60,12 +60,19 @@
 
 
 
-Me complace invitarlPREGEN a participar en nuestro Evento de la Oficina Regional Andina de Astronom\'ia para el Desarrollo de la IAU  ``II Workshop de Astronom\'ia en los Andes'', que tendr\'a lugar en Bogot\'a, Colombia en la semana del 27-31 de Julio de 2015. Tambi\'en nos complace extender la invitaci\'on para que presente unCHOP sobre su trabajo reciente sobre ``TITULO''.\\
+Me complace invitarlPREGEN a participar en nuestro Evento de la Oficina Regional Andina de Astronom\'ia para el Desarrollo de la IAU  ``II Workshop de Astronom\'ia en los Andes'', que tendr\'a lugar en la Universidad de los Andes en Bogot\'a, Colombia en la semana del 27-31 de Julio de 2015. Tambi\'en nos complace extender la invitaci\'on para que presente unCHOP sobre su trabajo reciente sobre ``TITULO''.   
+
+La programaci\'on detallada del evento la podr\'a encontrar en:
+
+  $\texttt{http://andeanroad.github.io/WorkshopAstronomiaAndes2/ }$
 
 Espero verlPREGEN este Julio en Bogot\'a.\\
-\\
 
-\closing{De parte de los Comit\'es Organizadores,}
+De parte de los Comit\'es Organizadores,\\
+
+\includegraphics[scale=0.08]{firma}\\
+Germ\'an Chaparro, PhD\\Profesor Titular\\Universidad ECCI\\Bogot\'a, Colombia
+
 
 %\setkomavar*{enclseparator}{Attached} % Change the default "encl:" to "Attached:"
 %\encl{Copyright permission form} % Attached documents
